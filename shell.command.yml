@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: redirect ls output to a file
-      ansible.buitin.command: ls -ltr > /tmp/output.txt
+      #ansible.buitin.command: ls -ltr > /tmp/output.txt
       ansible.builtin.shell: ls -ltr > /tmp/output.txt
       reguster: command_result
     - name: print the outcome
