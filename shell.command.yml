@@ -1,6 +1,6 @@
 ---
 - name: shell vs command
-  hosts: frontnd
+  hosts: frontend
   become: true
   tasks:
     - name: redirect ls output to a file
