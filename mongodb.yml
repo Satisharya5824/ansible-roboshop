@@ -4,11 +4,11 @@
   become: true
   tasks:
     - name: install mongodb server
-      ansible.buitin.dnf:
+      ansible.builtin.dnf:
         name: mongodb-org
         state: present
     - name: start & enable mongod
-      ansible.buitin.service:
+      ansible.builtin.service:
         name: mongod
         state: started
         enabled: yes
